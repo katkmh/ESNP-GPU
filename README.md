@@ -52,9 +52,9 @@ python3 ga_gpu.py -d "sm_pli/" -f "add-sm" -c "add" -p 15
 where it executes GA-GPU Framework Variant 1 using input Binary Addition, category Baseline, with a population size of 15.
 
 ### Output directory structure
-Output files generated from our experimentation is in directory `experimentation_output`. These files are compressed for easier transferring due to the large filesizes.
+Output files generated from our experimentation can be accessed through [this GDrive folder](https://drive.google.com/drive/folders/1EuqsOHZYxcq6XQ1r2SzmU1TRfLs8Ivhx?usp=sharing). These files are compressed for easier transferring due to the large filesizes.
 
-As a minor disclaimer, the output directories are named as follows: `outputs-gpu2-var1/` and `outputs-gpu2-var3/` which correspond to GA-GPU Framework **Variant 1** and **Variant 2** in our paper, respectively.
+As a minor disclaimer, the output directories are named as follows: `outputs-gpu2-var1/` and `outputs-gpu2-var3/` which correspond to GA-GPU Framework **Variant 1** and **Variant 2** in our paper, respectively. Extra runs and runs made using the GA-CPU Framework are also included in the folder and named accordingly.
 
 Initial Population
 ------------------
