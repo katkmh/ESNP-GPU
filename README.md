@@ -16,18 +16,19 @@ Files
 =====
 
 The following files are taken verbatim from Casauay et al's repository:
-* do_simulate.py
-* adv_pli_generator.py
-* fitcase_generator.py
-* get_results.py
-* pli_parser.py
-* render_graphs.py
-* simulator.py
+* `do_simulate.py`
+* `adv_pli_generator.py`
+* `fitcase_generator.py`
+* `get_results.py`
+* `pli_parser.py`
+* `render_graphs.py`
+* `simulator.py`
 
 Minor modification was made on the two GA framework code files in order to implement same initial population per evolution:
-* ga_framework-des1.py
-* ga_framework-des3.py
-These files correspond to the Variant 1 and Variant 3 from their paper, respectively. To run these files, they use the same syntax as `ga_gpu.py`, further discussed in the next section.
+* `ga_framework-des1.py`
+* `ga_framework-des3.py`
+
+These files correspond to the Variant 1 and Variant 3 **in their paper**, respectively. To run these files, they use the same syntax as `ga_gpu.py`, further discussed in the next section.
 
 GPU Implementation
 ------------------
@@ -48,10 +49,19 @@ python3 ga_gpu.py -d dir -f file -c op (-p pop | -s "True")?
 ### Output directory structure
 Output files generated from our experimentation is in directory `experimentation_output`. These files are compressed for easier transferring due to the large filesizes.
 
-As a minor disclaimer, the output directories are named as follows: `outputs-gpu2-var1/` and `outputs-gpu2-var3` which correspond to GA-GPU Framework **Variant 1** and **Variant 2** in our paper, respectively.
+As a minor disclaimer, the output directories are named as follows: `outputs-gpu2-var1/` and `outputs-gpu2-var3/` which correspond to GA-GPU Framework **Variant 1** and **Variant 2** in our paper, respectively.
 
 Initial Population
 ------------------
-In order to have a uniform initial population across all runs of each operation and category, `initpop_generator.py` is created. It outputs file `initial_population.py` which contains a dictionary of populations corresponding to different input types, with each input type as its key.
+In order to have uniform initial population across all runs of each operation and category, `initpop_generator.py` is created. It outputs file `initial_population.py` which contains a dictionary of populations corresponding to different input types, with each input type as its key.
 
-The available keys for Binary Addition are `add-adv` (adversarial), `add-lg` (original), and `add-sm` (baseline). For Binary Subtraction, available keys are `sub-adv`, `sub1-lg` (original 1), `sub3-lg` (original 2), and `sub-sm`.
+The available keys for Binary Addition are:
+* `add-adv` (adversarial),
+* `add-lg` (original), and 
+* `add-sm` (baseline)
+
+For Binary Subtraction, available keys are: 
+* `sub-adv`, 
+* `sub1-lg` (original 1), 
+* `sub3-lg` (original 2), and 
+* `sub-sm`

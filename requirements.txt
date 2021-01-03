@@ -1,0 +1,5 @@
+# pip install -r requirements.txt
+
+beautifultable==0.7.0
+pygments==2.3.1
+graphviz==0.10.1
