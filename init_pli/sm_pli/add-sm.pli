@@ -1,0 +1,24 @@
+@mu = in1, in2, 1, aux1, aux2, out
+@marcs = (in1,1)
+@marcs += (in1,aux1)
+@marcs += (in1,aux2)
+@marcs += (in2,1)
+@marcs += (in2,aux1)
+@marcs += (in2,aux2)
+@marcs += (aux1,aux2)
+@marcs += (aux2,aux1)
+@marcs += (aux2,1)
+@marcs += (1,out)
+@min = in1, in2
+@mout = out
+[a --> a]'in1
+[a --> a]'in2
+[a --> a]'1
+[a*2 --> #]'1
+[a*3 --> a]'1
+[a --> #]'aux1
+[a*2 --> a]'aux1
+[a*3 --> a]'aux1
+[a --> #]'aux2
+[a*2 --> a]'aux2
+[a*3 --> a]'aux2

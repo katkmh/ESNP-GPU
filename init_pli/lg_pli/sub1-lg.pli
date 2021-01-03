@@ -1,0 +1,105 @@
+@mu = in1, in1_1, in1_2, in1_3, in1_4, in1_5, in1_6, in2, aux1, aux2, a, b1, b2, b3, b4, c, d, e, f, out
+@ms(aux1) = a
+@ms(aux2) = a
+@marcs = (in1, in1_1)
+@marcs = (in1_1, in1_2)
+@marcs = (in1_2, in1_3)
+@marcs = (in1_3, in1_4)
+@marcs = (in1_4, in1_5)
+@marcs = (in1_5, in1_6)
+@marcs = (in1_6,a)
+@marcs = (aux1, aux2)
+@marcs = (aux2, aux1)
+@marcs = (aux1, in2)
+@marcs = (in2,add_in1)
+@marcs = (a,b1)
+@marcs = (a,c)
+@marcs = (b1,b2)
+@marcs = (b1,f)
+@marcs = (b2,b3)
+@marcs = (b3,b4)
+@marcs = (c,d)
+@marcs = (d,e)
+@marcs = (e,b3)
+@marcs = (f,e)
+@marcs = (b4,out)
+@min = in1, in2
+@mout = out
+[a --> a]'aux1
+[a --> a]'aux2
+[a --> a]'in1
+[a --> a]'in1_1
+[a --> a]'in1_2
+[a --> a]'in1_3
+[a --> a]'in1_4
+[a --> a]'in1_5
+[a --> a]'in1_6
+[a --> a]'in2
+[a*2 --> #]'in2
+[a --> a]'a
+[a*2 --> a*2]'a
+[a --> #]'c
+[a*2 --> a]'c
+[a --> a]'d
+[a --> a]'e
+[a*2 --> a]'e
+[a --> #]'f
+[a*2 --> a]'f
+[a*3 --> a]'f
+[a --> a]'b1
+[a*2 --> a*2]'b1
+[a*3 --> a*3]'b1
+[a --> a]'b2
+[a*2 --> a*2]'b2
+[a*3 --> a*3]'b2
+[a --> a]'b3
+[a*2 --> a*2]'b3
+[a*3 --> a*3]'b3
+[a --> a]'b4
+[a*2 --> #]'b4
+[a*3 --> a]'b4
+
+@mu = add_in1, add_in2, add_aux1, add_aux2, add_a, add_b1, add_b2, add_b3, add_b4, add_c, add_d, add_e, add_f
+@ms(add_aux1) = a
+@marcs = (add_aux1, add_aux2)
+@marcs = (add_aux2, add_in2)
+@marcs = (add_in1,add_a)
+@marcs = (add_in2,add_a)
+@marcs = (add_a,add_b1)
+@marcs = (add_a,add_c)
+@marcs = (add_b1,add_b2)
+@marcs = (add_b1,add_f)
+@marcs = (add_b2,add_b3)
+@marcs = (add_b3,add_b4)
+@marcs = (add_c,add_b1)
+@marcs = (add_c,add_d)
+@marcs = (add_d,add_e)
+@marcs = (add_e,add_b3)
+@marcs = (add_f,add_e)
+@marcs = (add_b4,a)
+[a --> a]'add_aux1
+[a --> a]'add_aux2
+[a --> a]'add_in1
+[a --> a]'add_in2
+[a --> a]'add_a
+[a*2 --> a*2]'add_a
+[a --> #]'add_c
+[a*2 --> a]'add_c
+[a --> a]'add_d
+[a --> a]'add_e
+[a*2 --> #]'add_e
+[a --> #]'add_f
+[a*2 --> a]'add_f
+[a*3 --> a]'add_f
+[a --> a]'add_b1
+[a*2 --> a*2]'add_b1
+[a*3 --> a*3]'add_b1
+[a --> a]'add_b2
+[a*2 --> a*2]'add_b2
+[a*3 --> a*3]'add_b2
+[a --> a]'add_b3
+[a*2 --> a*2]'add_b3
+[a*3 --> a*3]'add_b3
+[a --> a]'add_b4
+[a*2 --> #]'add_b4
+[a*3 --> a]'add_b4

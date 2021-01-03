@@ -1,0 +1,120 @@
+precision: 0
+overall_size = 148
+num_neurons = 17
+num_init_spikes = 28
+num_rules = 42
+num_synapses = 61
+
+@mu = in1, in2, 1, 2, 3, 4, 5, 6, out1, 7, 8, 9, 10, 11, 12, 13, 14
+@ms(1) = a
+@ms(2) = a
+@ms(7) = a
+@ms(8) = a*4
+@ms(10) = a*4
+@ms(11) = a*4
+@ms(12) = a*3
+@ms(13) = a*5
+@ms(14) = a*5
+@marcs = (in1, 3)
+@marcs = (in1, 4)
+@marcs = (in1, 5)
+@marcs = (in1, 12)
+@marcs = (in1, 13)
+@marcs = (in1, 14)
+@marcs = (in2, 3)
+@marcs = (in2, 4)
+@marcs = (in2, 5)
+@marcs = (in2, 9)
+@marcs = (in2, 10)
+@marcs = (in2, 11)
+@marcs = (1, in1)
+@marcs = (1, 2)
+@marcs = (1, 6)
+@marcs = (1, 13)
+@marcs = (1, 14)
+@marcs = (2, 1)
+@marcs = (2, 7)
+@marcs = (2, 11)
+@marcs = (3, 4)
+@marcs = (3, 5)
+@marcs = (3, 7)
+@marcs = (3, 12)
+@marcs = (4, 3)
+@marcs = (4, 7)
+@marcs = (5, out1)
+@marcs = (5, 7)
+@marcs = (5, 8)
+@marcs = (5, 13)
+@marcs = (6, 5)
+@marcs = (6, 7)
+@marcs = (6, 10)
+@marcs = (7, 1)
+@marcs = (7, 5)
+@marcs = (7, 12)
+@marcs = (7, 14)
+@marcs = (8, 1)
+@marcs = (8, 2)
+@marcs = (8, 14)
+@marcs = (9, in1)
+@marcs = (9, 4)
+@marcs = (9, 6)
+@marcs = (9, 8)
+@marcs = (10, in2)
+@marcs = (10, 2)
+@marcs = (10, 3)
+@marcs = (10, 7)
+@marcs = (10, 9)
+@marcs = (10, 10)
+@marcs = (11, 5)
+@marcs = (11, 6)
+@marcs = (12, 4)
+@marcs = (13, 6)
+@marcs = (13, 8)
+@marcs = (13, 14)
+@marcs = (14, 2)
+@marcs = (14, 6)
+@marcs = (14, 14)
+@min = in1, in2
+@mout = out1
+[a --> a]'in1
+[a*2 --> #]'in1
+[a --> a]'in2
+[a --> a]'1
+[a --> a]'2
+[a --> #]'3
+[a*2 --> a]'3
+[a*3 --> a]'3
+[a --> #]'4
+[a*2 --> a]'4
+[a*3 --> a]'4
+[a --> a]'5
+[a*2 --> #]'5
+[a*3 --> a]'5
+[a*4 --> #]'5
+[a --> a]'6
+[a --> a]'7 "a*5" 
+[a --> #]'7 "a*2" 
+[a --> a]'7 "a*2" 
+[a --> #]'7
+[a --> #]'7 "a*4" 
+[a --> a]'8
+[a --> #]'8 "a*4" 
+[a --> a]'9 "a*3" 
+[a --> #]'9 "a*4" 
+[a --> #]'9
+[a --> a]'9 "a*5" 
+[a --> #]'10
+[a --> a]'10 "a*2" 
+[a --> #]'10 "a*3" 
+[a --> a]'11 "a*3" 
+[a --> #]'11 "a*4" 
+[a --> a]'12
+[a --> a]'12 "a*3" 
+[a --> a]'12 "a*2" 
+[a --> #]'12 "a*3" 
+[a --> a]'13
+[a --> a]'13 "a*4" 
+[a --> #]'14 "a*3" 
+[a --> #]'14 "a*5" 
+[a --> a]'14
+[a --> #]'14

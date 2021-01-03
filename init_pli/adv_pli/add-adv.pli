@@ -1,0 +1,63 @@
+precision: 0
+overall_size = 67
+num_neurons = 10
+num_init_spikes = 9
+num_rules = 25
+num_synapses = 23
+
+@mu = in1, in2, 1, 2, 3, out1, 4, 5, 6, 7, 8
+@ms(5) = a
+@ms(6) = a*2
+@ms(7) = a*4
+@ms(8) = a*3
+@marcs = (in1, 1)
+@marcs = (in1, 2)
+@marcs = (in1, 3)
+@marcs = (in1, 4)
+@marcs = (in1, 6)
+@marcs = (in2, 1)
+@marcs = (in2, 2)
+@marcs = (in2, 3)
+@marcs = (in2, 4)
+@marcs = (1, out1)
+@marcs = (2, 3)
+@marcs = (3, 1)
+@marcs = (3, 2)
+@marcs = (3, 4)
+@marcs = (4, in2)
+@marcs = (4, 4)
+@marcs = (5, 5)
+@marcs = (6, 4)
+@marcs = (6, 8)
+@marcs = (7, 5)
+@marcs = (7, 8)
+@marcs = (8, 1)
+@min = in1, in2
+@mout = out1
+[a --> a]'in1
+[a --> a]'in2
+[a --> a]'1
+[a*2 --> #]'1
+[a*3 --> a]'1
+[a --> #]'2
+[a*2 --> a]'2
+[a*3 --> a]'2
+[a --> #]'3
+[a*2 --> a]'3
+[a*3 --> a]'3
+[a --> a]'4
+[a --> #]'4
+[a --> a]'4 "a*3" 
+[a --> a]'5 "a*3" 
+[a --> #]'5 "a*4" 
+[a --> #]'6 "a*3" 
+[a --> a]'6 "a*2" 
+[a --> #]'7 "a*5" 
+[a --> a]'7
+[a --> a]'7 "a*5" 
+[a --> a]'7 "a*3" 
+[a --> #]'7 "a*3" 
+[a --> #]'8 "a*2" 
+[a --> a]'8 "a*4" 
+[a --> a]'8
+[a --> #]'8 "a*3" 
