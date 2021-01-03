@@ -45,6 +45,12 @@ python3 ga_gpu.py -d dir -f file -c op (-p pop | -s "True")?
 * `-p pop`: optional, takes integer input population size. Otherwise, it uses default population size value 80
 * `-s "True"`: optional, if added implements Variant 2. Otherwise, it implements Variant 1.
 
+An example run would be 
+```
+python3 ga_gpu.py -d "sm_pli/" -f "add-sm" -c "add" -p 15
+```
+where it executes GA-GPU Framework Variant 1 using input Binary Addition, category Baseline, with a population size of 15.
+
 ### Output directory structure
 Output files generated from our experimentation is in directory `experimentation_output`. These files are compressed for easier transferring due to the large filesizes.
 
