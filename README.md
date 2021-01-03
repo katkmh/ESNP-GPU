@@ -32,8 +32,7 @@ These files correspond to the Variant 1 and Variant 3 **in their paper**, respec
 
 GPU Implementation
 ------------------
-The following files have major modifications in order to apply parallel implementation to select GA operators, specifically Mutation, Crossover, and Selection.
-* `ga_gpu.py`
+The code responsible for the execution of the GA-GPU Framework is `ga_gpu.py` which is adapted from Casauay et al's main code with major modifications in order to apply parallel implementation to the GA operators, specifically Mutation, Crossover, and Selection. GPU Implementation of SNP System simulation is adapted from both Casauay et al and Aboy et al.
 
 Given two variants of the GA framework, Variant 1 and Variant 2, where both delete inactive neurons during evolution but the former does not allow the generation of self loops while the latter allows it, `ga_gpu.py` is run with the following syntax:
 
