@@ -8,7 +8,7 @@ Python 3 and `pip` are required to be able to run the files. Create a virtual en
 pip install -r requirements.txt
 ```
 
-Experiments that run partially were made with the following environment modules:
+Experiments that run partially parallel were made with the following environment modules:
 * anaconda/3-5.3.1
 * cuda/10.1_cudnn-7.6.5
 
